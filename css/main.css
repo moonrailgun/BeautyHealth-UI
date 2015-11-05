@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+#Login {
+    background-color: #4696e5;
+    color: #d0e4f8;
+    padding: 4.5em 0 2.5em 0;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    background-image: url("../Images/overlay.png"), url("../Images/pattern-size1.svg");
+    background-position: top left, center center;
+    background-attachment: fixed, fixed;
+    background-size: auto, cover;
+    height: 100vh;
+    min-height: 35em;
+}
+
+#Login .image {
+    border-radius: 0;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#Login .image.phone {
+    box-shadow: none;
+}
+
+#Login .image.phone .inner, #header .image.phone:before, #header .image.phone:after {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+#Login .image.phone .inner:before {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+#Login .image.phone .inner:after {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.image.phone {
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 0 3em 0;
+    width: 13em;
+}
+
+.image.phone img {
+    border-radius: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.image.phone .inner, .image.phone:before, .image.phone:after {
+    display: block;
+    border: solid 2px rgba(255, 255, 255, 0.25);
+}
+
+.image.phone .inner {
+    position: relative;
+}
+
+.image.phone .inner:before, .image.phone .inner:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+}
+
+.image.phone .inner:before {
+    top: -1.375em;
+    margin-left: -1em;
+    width: 2em;
+    height: 0.25em;
+    border-radius: 0.5em;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.image.phone .inner:after {
+    bottom: -2.75em;
+    margin-left: -1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    border: solid 2px rgba(255, 255, 255, 0.25);
+}
+
+.image.phone:before, .image.phone:after {
+    content: '';
+}
+
+.image.phone:before {
+    height: 2.5em;
+    border-radius: 1em 1em 0 0;
+    border-bottom: 0;
+    display: block;
+}
+
+.image.phone .inner:before {
+    background: #e6e6e6;
+}
+
+.image.phone {
+    box-shadow: none;
+    display: block;
+    border: solid 2px rgba(255, 255, 255, 0.25);
+}
+.image.phone .inner:after {
+    border-color: #e6e6e6;
+}
+
+.image.phone:after {
+    height: 3.5em;
+    border-radius: 0 0 1em 1em;
+    border-top: 0;
+    display: block;
+}
+
+.image {
+    box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+}

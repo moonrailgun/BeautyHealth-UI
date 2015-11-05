@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <title></title>
+</head>
+<body>
+<div id="Login">
+    <div class="image phone"><div class="inner"><img src="Images/screen.jpg" alt=""></div></div>
+    <div id="WhereForm">
+        <form id="fm" method="post">
+            手机号:
+            <br>
+            <input name="UserID" id="UserID" type="text">
+            <br>
+            密 码 :
+            <br>
+            <input name="UserPassword" id="UserPassword" type="password">
+            <br>
+            <input name="CheckCode" style="width: 60px; height: 25px;" type="text">
+            <img id="check_img" style="width: 60px; height: 25px;" onclick="App.refreshCheckCode('check_img')" alt="验证码"
+                 src="/Buffet/GetCheckCode/">
+            <span><a>换一换</a></span>
+            <br>
+            <button name="Code" class="am-btn am-btn-primary am-btn-xs" id="Code" onclick="C()" type="button">发送验证码</button>
+            <br>
+            <input name="IsRememberMe" id="IsRememberMe" type="checkbox" checked="checked">记住密码（7天）
+            <br>
+            <button name="AccountLogin" class="am-btn am-btn-primary" onclick="FunAccountLogin()" type="button">用户登录
+            </button>
+            <button name="CodeLogin" class="am-btn am-btn-primary" onclick="FunCodeLogin()" type="button">验证码登录</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
