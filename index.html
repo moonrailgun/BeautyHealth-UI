@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <style>
-
     </style>
     <title></title>
 </head>
@@ -16,7 +15,7 @@
     <div class="image phone">
         <div class="inner"><img src="Images/screen.jpg" alt=""></div>
     </div>
-    <div id="show" style="margin: 0 auto 8% 0">
+    <div id="show" style="margin: 0 auto 20% 0">
         <h1>美年姬康</h1>
         <h4>做最真实的自己</h4>
     </div>
@@ -65,4 +64,17 @@
 </div>
 
 </body>
+<script src="./js/jquery-2.1.4.js"></script>
+<script>
+    $(document).ready(function(){
+        var $window = $(window);
+        var $body = $('body');
+        $body.addClass('is-loading');
+        $window.on('load',function(){
+            window.setTimeout(function() {
+                $body.removeClass('is-loading');
+            }, 100);
+        });
+    });
+</script>
 </html>
