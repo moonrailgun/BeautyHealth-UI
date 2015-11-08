@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../css/layout.css">
+    <title></title>
+</head>
+<body>
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">用户中心</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">个人信息显示与修改</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="UserUUID">注册码</label>
+                                    <div class="input-group">
+                                        <input id="UserUUID" type="text" class="form-control" placeholder="在此处输入注册码">
+                                        <span class="input-group-btn" onclick="CreateRegNum()">
+                                            <button class="btn btn-default" type="button">重新生成注册码</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserRealName">真实姓名</label>
+                                    <input type="text" class="form-control" id="UserRealName" placeholder="在此处输入您的真实姓名">
+                                    <p class="help-block">建议：写上您的姓名，否则您提交问题，回答问题等操作将会暴露您的手机号 </p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserSex">性别</label>
+                                    <select id="UserSex" class="form-control">
+                                        <option>男</option>
+                                        <option>女</option>
+                                        <option>嬲</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserBirthday">出生日期</label>
+                                    <div class="input-group">
+                                        <input id="UserBirthday" class="date form-control" type="text" value="2015-11-08">
+                                        <span class="input-group-addon" onclick="$('#UserBirthday').click();"><i class="icon-calendar"></i></span>
+                                    </div>
+                                    <p class="help-block">年龄:999</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserTel">联系电话</label>
+                                    <input id="UserTel" type="text" class="form-control" placeholder="在此处输入您的联系电话">
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserAddress">家庭地址</label>
+                                    <input id="UserAddress" type="text" class="form-control" placeholder="在此处输入您的家庭地址">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">保存</button>
+                                    <button type="reset" class="btn btn-default">重置</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="../../js/jquery-2.1.4.js"></script>
+<script src="../../js/bootstrap.js"></script>
+<script src="../../js/bootstrap-datepicker.min.js"></script>
+<script src="../../locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<script>
+    $(function(){
+        $('.date').datepicker({
+            format:'yyyy-mm-dd',
+            language: "zh-CN",
+            todayBtn: true,
+            todayHighlight : true,
+            initialDate: Date.now
+        });
+    });
+</script>
+</html>
