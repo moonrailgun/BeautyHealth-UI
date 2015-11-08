@@ -5,17 +5,7 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-    <!--<link rel="stylesheet" type="text/css" href="./css/metisMenu.css">-->
-    <link rel="stylesheet" type="text/css" href="./css/sb-admin-2.css">
-    <style>
-        #side-menu {
-            border-right: 1px solid #e7e7e7;
-        }
-
-        div.navbar-right {
-            margin-right: 0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
 </head>
 <body>
 <nav id="header" class="navbar navbar-default  navbar-static-top" style="margin-bottom: 0">
@@ -30,76 +20,48 @@
                     <a href="index.html"><i class="icon-home icon-fixed-width"></i> 首页</a>
                 </li>
                 <li>
-                    <a href="#"><i class="icon-user icon-fixed-width"></i> 用户中心<span class="glyphicon arrow"></span></a>
+                    <a href="#"><i class="icon-user icon-fixed-width"></i> 用户中心<span
+                            class="pull-right icon-arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li>
-                            <a href="../../UserManager/DisplayInfo">个人信息</a>
-                        </li>
-                        <li>
-                            <a href="../../UserManager/ChangePassword">密码修改</a>
-                        </li>
-                        <li>
-                            <a href="../../UserManager/QueryFamily">亲情号码</a>
-                        </li>
-                        <li>
-                            <a href="../../UserManager/UserSuggest">用户反馈</a>
-                        </li>
+                        <li><a href="../../UserManager/DisplayInfo">个人信息</a></li>
+                        <li><a href="../../UserManager/ChangePassword">密码修改</a></li>
+                        <li><a href="../../UserManager/QueryFamily">亲情号码</a></li>
+                        <li><a href="../../UserManager/UserSuggest">用户反馈</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><i class="icon-stethoscope icon-fixed-width"></i> 个人健康<span
-                            class="glyphicon arrow"></span></a>
+                            class="pull-right icon-arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li>
-                            <a href="../../PersonalHealth/BloodOfChart">血糖查询</a>
-                        </li>
-                        <li>
-                            <a href="../../PersonalHealth/PressureOfChart">血压查询</a>
-                        </li>
-                        <li>
-                            <a href="../../PersonalHealth/WalkActionOfChart">步数查询</a>
-                        </li>
-                        <li>
-                            <a href="../../PersonalHealth/TestReport">体检报告</a>
-                        </li>
+                        <li><a href="../../PersonalHealth/BloodOfChart">血糖查询</a></li>
+                        <li><a href="../../PersonalHealth/PressureOfChart">血压查询</a></li>
+                        <li><a href="../../PersonalHealth/WalkActionOfChart">步数查询</a></li>
+                        <li><a href="../../PersonalHealth/TestReport">体检报告</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="icon-user-md icon-fixed-width"></i> 私人医生<span class="glyphicon arrow"></span></a>
+                    <a href="#"><i class="icon-user-md icon-fixed-width"></i> 私人医生<span
+                            class="pull-right icon-arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li>
-                            <a href="../../PersonalDoctor/RaiseQuestions">问题提出</a>
-                        </li>
-                        <li>
-                            <a href="../../PersonalDoctor/QueryReply">回复内容</a>
-                        </li>
-                        <li>
-                            <a href="../../PersonalDoctor/ViewHospital">立即预约</a>
-                        </li>
-                        <li>
-                            <a href="../../PersonalDoctor/QueryAppoint">预约查询</a>
-                        </li>
+                        <li><a href="../../PersonalDoctor/RaiseQuestions">问题提出</a></li>
+                        <li><a href="../../PersonalDoctor/QueryReply">回复内容</a></li>
+                        <li><a href="../../PersonalDoctor/ViewHospital">立即预约</a></li>
+                        <li><a href="../../PersonalDoctor/QueryAppoint">预约查询</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="icon-hospital icon-fixed-width"></i> 安全监护<span class="glyphicon arrow"></span></a>
+                    <a href="#"><i class="icon-hospital icon-fixed-width"></i> 安全监护<span
+                            class="pull-right icon-arrow"></span></a>
                     <ul class="nav nav-second-level">
-                        <li>
-                            <a href="../../SafetyMonitoring/Location">定位</a>
-                        </li>
-                        <li>
-                            <a href="../../SafetyMonitoring/MonitorMoving">运动轨迹</a>
-                        </li>
-                        <li>
-                            <a href="../../SafetyMonitoring/MonitorBlood">血糖监护</a>
-                        </li>
-                        <li>
-                            <a href="../../SafetyMonitoring/MonitorPressure">血压监护</a>
-                        </li>
+                        <li><a href="../../SafetyMonitoring/Location">定位</a></li>
+                        <li><a href="../../SafetyMonitoring/MonitorMoving">运动轨迹</a></li>
+                        <li><a href="../../SafetyMonitoring/MonitorBlood">血糖监护</a></li>
+                        <li><a href="../../SafetyMonitoring/MonitorPressure">血压监护</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="icon-reorder icon-fixed-width"></i> 管理中心<span class="glyphicon arrow"></span></a>
+                    <a href="#"><i class="icon-reorder icon-fixed-width"></i> 管理中心<span
+                            class="pull-right icon-arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="../../ManageCenter/CallCenterInfo">呼叫中心信息管理</a></li>
                         <li><a href="../../ManageCenter/UserSuggestManage">用户信息反馈管理</a></li>
@@ -114,7 +76,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="icon-medkit icon-fixed-width"></i> 医生中心<span
-                            class="glyphicon arrow"></span></a>
+                            class="pull-right icon-arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="../../DoctorCenter/ReplyQuestions">医生问题回复</a></li>
                     </ul>
@@ -123,12 +85,36 @@
         </div>
     </div>
 </nav>
-<div id="page-wrapper" style="min-height: 433px;">
+<div id="page-wrapper">
     <div>
         这里是内容页
     </div>
 </div>
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/bootstrap.js"></script>
 <script src="./js/metisMenu.js"></script>
-<script src="./js/sb-admin-2.js"></script>
+<script>
+    $(function () {
+        $('#side-menu').metisMenu();
+
+        $(window).bind("load resize", function() {
+            topOffset = 50;
+            width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+            if (width < 768) {
+                $('div.navbar-collapse').addClass('collapse');
+                topOffset = 100; // 2-row-menu
+            } else {
+                $('div.navbar-collapse').removeClass('collapse');
+            }
+
+            height = ((this.window.innerHeight > 0) ? this.window.innerHeight : this.screen.height) - 1;
+            height = height - topOffset;
+            if (height < 1) height = 1;
+            if (height > topOffset) {
+                $("#page-wrapper").css("min-height", (height) + "px");
+            }
+        });
+    });
+</script>
 </body>
 </html>
