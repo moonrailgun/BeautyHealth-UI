@@ -18,7 +18,7 @@ body {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    background-image: url("../Images/overlay.png"), url("../Images/pattern-size1.svg");
+    background-image: url("../img/overlay.png"), url("../img/pattern-size1.svg");
     background-position: top left, center center;
     background-attachment: fixed, fixed;
     background-size: auto, cover;
