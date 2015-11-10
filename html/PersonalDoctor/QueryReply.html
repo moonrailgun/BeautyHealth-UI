@@ -2,9 +2,164 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/layout.css">
     <title></title>
+    <style>
+        #list .replyMain {
+            border: solid 1px #ddd;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        #list .replyItem {
+            position: relative;
+            border-bottom: solid 1px #ddd;
+            padding: 10px 6px 10px 6px;
+        }
+
+        #list .replyItem:last-of-type {
+            border-bottom: 0;
+        }
+
+        #list .replyMain .replyTime {
+            position: absolute;
+            right: 14px;
+            top: 10px;
+        }
+    </style>
 </head>
 <body>
-
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">私人医生</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">回复内容</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="form-group form-inline">
+                                    <label for="StartTime">从</label>
+                                    <input type="text" class="form-control date" id="StartTime" placeholder="在此处填入开始日期">
+                                    <label for="StartTime">到</label>
+                                    <input type="text" class="form-control date" id="EndTime" placeholder="在此处填入结束日期">
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="radio">
+                                        <label class="radio-inline col-sm-4">
+                                            <input type="radio" name="optionsRadios1" id="optionsRadios1"
+                                                   value="option1" checked>
+                                            所有的问题
+                                        </label>
+                                        <label class="radio-inline col-sm-4">
+                                            <input type="radio" name="optionsRadios1" id="optionsRadios2"
+                                                   value="option2">
+                                            自己的问题
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label class="radio-inline col-sm-4">
+                                            <input type="radio" name="optionsRadios2" id="optionsRadios3"
+                                                   value="option3" checked>
+                                            中医
+                                        </label>
+                                        <label class="radio-inline col-sm-4">
+                                            <input type="radio" name="optionsRadios2" id="optionsRadios4"
+                                                   value="option4">
+                                            西医&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">提交</button>
+                                </div>
+                            </form>
+                            <div id="list">
+                                <div class="item panel panel-default">
+                                    <div class="header panel-heading">
+                                        <span class="author ">陈亮</span>
+                                        <span style="padding-left: 20px;">提出了疑问</span>
+                                        <small class="time pull-right">2015/11/3 19:41:16</small>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="content">
+                                            睡你麻痹起来嗨
+                                        </div>
+                                        <div class="reply pull-right col-md-12">
+                                            <div class="text-right"><a class="replyBtn" data-toggle="collapse"
+                                                                       href="#reply1">收起回复</a></div>
+                                            <div id="reply1" class="collapse replyMain">
+                                                <div class="replyItem">
+                                                    <div class="replyAuthor">陈亮:</div>
+                                                    <div class="replyContent">(╯‵□′)╯︵┻━┻</div>
+                                                    <small class="replyTime">2015/11/3 19:41:16</small>
+                                                </div>
+                                                <div class="replyItem">
+                                                    <div class="replyAuthor">陈亮:</div>
+                                                    <div class="replyContent">(╯‵□′)╯︵┻━┻</div>
+                                                    <small class="replyTime">2015/11/3 19:41:16</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item panel panel-default">
+                                    <div class="header panel-heading">
+                                        <span class="author ">陈亮</span>
+                                        <span style="padding-left: 20px;">提出了疑问</span>
+                                        <small class="time pull-right">2015/11/3 19:41:16</small>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="content">
+                                            睡你麻痹起来嗨
+                                        </div>
+                                        <div class="reply pull-right col-md-12">
+                                            <div class="text-right"><a class="replyBtn" data-toggle="collapse"
+                                                                       href="#reply2">收起回复</a></div>
+                                            <div id="reply2" class="collapse replyMain">
+                                                <div class="replyItem">
+                                                    <div class="replyAuthor">陈亮:</div>
+                                                    <div class="replyContent">(╯‵□′)╯︵┻━┻</div>
+                                                    <small class="replyTime">2015/11/3 19:41:16</small>
+                                                </div>
+                                                <div class="replyItem">
+                                                    <div class="replyAuthor">陈亮:</div>
+                                                    <div class="replyContent">(╯‵□′)╯︵┻━┻</div>
+                                                    <small class="replyTime">2015/11/3 19:41:16</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+<script src="../../js/jquery-2.1.4.js"></script>
+<script src="../../js/bootstrap.js"></script>
+<script src="../../js/bootstrap-datepicker.min.js"></script>
+<script src="../../locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<script>
+    $(function () {
+        $('.date').datepicker({
+            format: 'yyyy-mm-dd',
+            language: "zh-CN",
+            todayBtn: true,
+            todayHighlight: true,
+            initialDate: Date.now
+        });
+    });
+</script>
 </html>
