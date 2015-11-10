@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/layout.css">
+    <title></title>
+</head>
+<body>
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">管理中心</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">医院信息管理</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="pic">医院图片</label>
+                                    <input type="file" name="pic" id="pic" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="HospitalName">医院名称</label>
+                                    <input type="text" name="HospitalName" id="HospitalName" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="HospitalLevel">医院等级</label>
+                                    <select id="HospitalLevel" name="HospitalLevel" class="form-control">
+                                        <option value="一级甲等">一级甲等</option>
+                                        <option value="一级乙等">一级乙等</option>
+                                        <option value="一级丙等">一级丙等</option>
+                                        <option value="二级甲等">二级甲等</option>
+                                        <option value="二级乙等">二级乙等</option>
+                                        <option value="二级丙等">二级丙等</option>
+                                        <option value="三级甲等">三级甲等</option>
+                                        <option value="三级乙等">三级乙等</option>
+                                        <option value="三级丙等">三级丙等</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="HospitalBriefly">医院简介</label>
+                                    <textarea id="HospitalBriefly" name="HospitalBriefly" rows="5" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-default" value="上传"/>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-5">
+                            <div><label>预览</label></div>
+                            <img id="PPP" src="" alt="图片预览区" style="width:200px;">
+                            <p class="help-block">大小:999M</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

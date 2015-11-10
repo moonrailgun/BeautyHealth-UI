@@ -1,0 +1,21 @@
+#list .replyMain {
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#list .replyItem {
+    position: relative;
+    border-bottom: solid 1px #ddd;
+    padding: 10px 6px 10px 6px;
+}
+
+#list .replyItem:last-of-type {
+    border-bottom: 0;
+}
+
+#list .replyMain .replyTime {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+}
