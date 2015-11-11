@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+</head>
+<body>
+<nav id="header" class="navbar navbar-default  navbar-static-top" style="margin-bottom: 0">
+    <div class="navbar-header"><a class="navbar-brand">美年颐康后台管理系统V1.0</a></div>
+    <div class="nav navbar-right">
+        <div class="navbar-brand">当前用户:左凯, 当前时间:2015年11月4日 Wednesday[<a href="/UserManager/LogOff">注销</a>]</div>
+    </div>
+    <div class="navbar-default sidebar">
+        <div class="sidebar-nav navbar-collapse">
+            <ul id="side-menu" class="nav">
+                <li>
+                    <a href="index.html"><i class="icon-home icon-fixed-width"></i> 首页</a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-user icon-fixed-width"></i> 用户中心<span
+                            class="pull-right icon-arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="../../UserManager/DisplayInfo">个人信息</a></li>
+                        <li><a href="../../UserManager/ChangePassword">密码修改</a></li>
+                        <li><a href="../../UserManager/QueryFamily">亲情号码</a></li>
+                        <li><a href="../../UserManager/UserSuggest">用户反馈</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-stethoscope icon-fixed-width"></i> 个人健康<span
+                            class="pull-right icon-arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="../../PersonalHealth/BloodOfChart">血糖查询</a></li>
+                        <li><a href="../../PersonalHealth/PressureOfChart">血压查询</a></li>
+                        <li><a href="../../PersonalHealth/WalkActionOfChart">步数查询</a></li>
+                        <li><a href="../../PersonalHealth/TestReport">体检报告</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-user-md icon-fixed-width"></i> 私人医生<span
+                            class="pull-right icon-arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="../../PersonalDoctor/RaiseQuestions">问题提出</a></li>
+                        <li><a href="../../PersonalDoctor/QueryReply">回复内容</a></li>
+                        <li><a href="../../PersonalDoctor/ViewHospital">立即预约</a></li>
+                        <li><a href="../../PersonalDoctor/QueryAppoint">预约查询</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-hospital icon-fixed-width"></i> 安全监护<span
+                            class="pull-right icon-arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="../../SafetyMonitoring/Location">定位</a></li>
+                        <li><a href="../../SafetyMonitoring/MonitorMoving">运动轨迹</a></li>
+                        <li><a href="../../SafetyMonitoring/MonitorBlood">血糖监护</a></li>
+                        <li><a href="../../SafetyMonitoring/MonitorPressure">血压监护</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-reorder icon-fixed-width"></i> 管理中心<span
+                            class="pull-right icon-arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="../../ManageCenter/CallCenterInfo">呼叫中心信息管理</a></li>
+                        <li><a href="../../ManageCenter/UserSuggestManage">用户信息反馈管理</a></li>
+                        <li><a href="../../ManageCenter/OperateaADImage">客户端广告页管理</a></li>
+                        <li><a href="../../ManageCenter/PermissionManage">权限管理</a></li>
+                        <li><a href="../../ManageCenter/HospitalInfo">医院信息管理</a></li>
+                        <li><a href="../../ManageCenter/DoctorInfo">医生信息管理</a></li>
+                        <li><a href="../../ManageCenter/QuestionManage">病人问题管理</a></li>
+                        <li><a href="../../ManageCenter/QRCode">二维码管理</a></li>
+                        <li><a href="../../ManageCenter/MembersInfoManage">会员中心信息管理</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-medkit icon-fixed-width"></i> 医生中心<span
+                            class="pull-right icon-arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="../../DoctorCenter/ReplyQuestions">医生问题回复</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-signout icon-fixed-width"></i> 登出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">用户中心</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">个人信息显示与修改</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="UserUUID">注册码</label>
+                                    <div class="input-group">
+                                        <input id="UserUUID" type="text" class="form-control" placeholder="在此处输入注册码">
+                                        <span class="input-group-btn" onclick="CreateRegNum()">
+                                            <button class="btn btn-default" type="button">重新生成注册码</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserRealName">真实姓名</label>
+                                    <input type="text" class="form-control" id="UserRealName" placeholder="在此处输入您的真实姓名">
+                                    <p class="help-block">建议：写上您的姓名，否则您提交问题，回答问题等操作将会暴露您的手机号 </p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserSex">性别</label>
+                                    <select id="UserSex" class="form-control">
+                                        <option>男</option>
+                                        <option>女</option>
+                                        <option>嬲</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserBirthday">出生日期</label>
+                                    <div class="input-group">
+                                        <input id="UserBirthday" class="date form-control" type="text" value="2015-11-08">
+                                        <span class="input-group-addon" onclick="$('#UserBirthday').click();"><i class="icon-calendar"></i></span>
+                                    </div>
+                                    <p class="help-block">年龄:999</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserTel">联系电话</label>
+                                    <input id="UserTel" type="text" class="form-control" placeholder="在此处输入您的联系电话">
+                                </div>
+                                <div class="form-group">
+                                    <label for="UserAddress">家庭地址</label>
+                                    <input id="UserAddress" type="text" class="form-control" placeholder="在此处输入您的家庭地址">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">保存</button>
+                                    <button type="reset" class="btn btn-default">重置</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear:both;text-align:center;background-color:#C0C0C0;position:relative;height:150px;">
+    <div style="float:left;margin-left:100px;margin-top:10px">
+        关于我们<br>
+        <a href="../../BottomFile/Law">法律声明</a><br>
+        <a href="../../BottomFile/Company">公司简介</a><br>
+        公司声明<br>
+    </div>
+    <div style="float:left;margin-left:180px;margin-top:10px">
+        关于安卓<br>
+        <img src="/Files/Upload/Images/QRCode.png" style="width:90px;height:90px;" ;="">
+    </div>
+</div>
+<script src="./js/jquery-2.1.4.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/metisMenu.js"></script>
+<script>
+    $(function () {
+        $('#side-menu').metisMenu();
+
+        $(window).bind("load resize", function() {
+            topOffset = 50;
+            width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+            if (width < 768) {
+                $('div.navbar-collapse').addClass('collapse');
+                topOffset = 100; // 2-row-menu
+            } else {
+                $('div.navbar-collapse').removeClass('collapse');
+            }
+
+            height = ((this.window.innerHeight > 0) ? this.window.innerHeight : this.screen.height) - 1;
+            height = height - topOffset;
+            if (height < 1) height = 1;
+            if (height > topOffset) {
+                $("#page-wrapper").css("min-height", (height) + "px");
+            }
+        });
+    });
+</script>
+</body>
+</html>
