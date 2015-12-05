@@ -93,18 +93,33 @@
         这里是内容页
     </div>
 </div>
-<div style="clear:both;text-align:center;background-color:#C0C0C0;position:relative;height:150px;">
-    <div style="float:left;margin-left:100px;margin-top:10px">
-        关于我们<br>
-        <a href="../../BottomFile/Law">法律声明</a><br>
-        <a href="../../BottomFile/Company">公司简介</a><br>
-        公司声明<br>
+<footer>
+    <div class="row">
+        <div id="footerMain" class="col-sm-6 col-sm-offset-0 text-center">
+            <div class="col-sm-3 footer-cell">关于我们</div>
+            <div class="col-sm-3 footer-cell">法律声明</div>
+            <div class="col-sm-3 footer-cell">公司简介</div>
+            <div class="col-sm-3 footer-cell">公司声明</div>
+        </div>
+        <div class="col-sm-3 col-sm-offset-2 text-center">
+            <div class="row">
+                <div class="footer-cell">扫描二维码下载手机版应用</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="/Files/Upload/Images/QRCode.png" style="width:90px;height:90px;" ;="">
+                    <div>安卓</div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="/Files/Upload/Images/QRCode.png" style="width:90px;height:90px;" ;="">
+                    <div>苹果</div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
-    <div style="float:left;margin-left:180px;margin-top:10px">
-        关于安卓<br>
-        <img src="/Files/Upload/Images/QRCode.png" style="width:90px;height:90px;" ;="">
-    </div>
-</div>
+</footer>
 <script src="./js/jquery-2.1.4.js"></script>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/metisMenu.js"></script>
@@ -112,7 +127,7 @@
     $(function () {
         $('#side-menu').metisMenu();
 
-        $(window).bind("load resize", function() {
+        $(window).bind("load resize", function () {
             topOffset = 50;
             width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
             if (width < 768) {
@@ -129,6 +144,15 @@
                 $("#page-wrapper").css("min-height", (height) + "px");
             }
         });
+
+        var $footer = $('footer');
+        $footer.mouseover(function () {
+            $footer.addClass('actived');
+        });
+        $footer.mouseout(function () {
+            $footer.removeClass('actived');
+        });
+        $('[data-toggle="popover"]').popover();
     });
 </script>
 </body>
