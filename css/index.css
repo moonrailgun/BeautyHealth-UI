@@ -7,28 +7,29 @@ body {
 #Login {
     background-color: #4696e5;
     color: #d0e4f8;
-    padding: 5% 0 10% 0;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    display: -webkit-flex;
-    display: flex;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
     background-image: url("../img/overlay.png"), url("../img/pattern-size1.svg");
     background-position: top left, center center;
     background-attachment: fixed, fixed;
     background-size: auto, cover;
     height: 100vh;
-    min-height: 35em;
+    min-height: 550px;
     position: relative;
+	vertical-align:top;
 }
-
-#Login .show{
-
+#show,#Login .image,#WhereForm{
+	position: absolute;
+}
+#Login .image{
+	left:20%;
+	top: 20%;
+}
+#show {
+	left: 40%;
+	top: 20%;
+}
+#WhereForm{
+	top:20%;
+	right:0;
 }
 
 #Login .image {
@@ -37,7 +38,7 @@ body {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    margin: 0 5% 5% 15%;
+    /*margin: 0 5% 5% 15%;*/
 }
 
 #Login .image.phone {
@@ -60,6 +61,7 @@ body {
     box-shadow: none;
     border-radius: 0;
     width: 15%;
+	min-width : 200px;
 }
 
 .image.phone img {
@@ -139,7 +141,7 @@ body {
 .loginpanel {
     width: 300px;
     border-radius: 0.5rem;
-    margin:0 10% 50px 0;
+    margin:0 10% 0 0;
     background-color: #555;
     padding: 20px;
 }
